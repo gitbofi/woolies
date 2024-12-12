@@ -4,11 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        text: "#fff",
-        gray: {
-          DEFAULT: "#78716c",
-          950: "#0C0C0D",
-        },
+        light: "#fff",
+        dark: "#0C0C0D",
       },
 
       fontFamily: {
@@ -17,7 +14,8 @@ export default {
       },
 
       height: {
-        hero: "80svh",
+        heroLarge: "80svh",
+        heroSmall: "60svh",
       },
     },
   },

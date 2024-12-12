@@ -11,7 +11,7 @@ const Navbar = () => {
   
     return (
     <header id="navbar-container">
-        <nav className="bg-gray-950 border-box w-full h-20 text-text flex justify-between items-center">
+        <nav className="bg-dark border-box w-full h-20 text-light flex justify-between items-center">
             <div id="navbar-links" className="flex p-6 uppercase space-x-8 font-now">
                 <img src={ logo } alt="Woolies Logo" className="mb-1 mr-2 ml-6"/>
                    
