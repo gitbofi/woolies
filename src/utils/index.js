@@ -5,6 +5,7 @@ import svgShoppingBag from "/assets/media/images/shoppingBag.svg";
 import svgCloseMenu from "/assets/media/images/closeMenuIcon.svg";
 import jpgCollectionPants from "/assets/media/images/collectionPants.jpg";
 import jpgCollectionPair from "/assets/media/images/collectionPair.jpg";
+import jpgCollectionSingle from "/assets/media/images/collectionSingle.jpg";
 
 import vidHeroVideo from "/assets/media/videos/heroVideo.mp4";
 
@@ -17,5 +18,6 @@ export const shoppingBagIcon = svgShoppingBag;
 export const closeMenuIcon = svgCloseMenu;
 export const collectionPants = jpgCollectionPants;
 export const collectionPair = jpgCollectionPair;
+export const collectionSingle = jpgCollectionSingle;
 
 export const heroVideo = vidHeroVideo;
