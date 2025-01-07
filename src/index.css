@@ -6,19 +6,62 @@
 
 @font-face {
   font-family: "Now";
-  font-style: light;
-  src: url(/public/assets/fonts/Now-Light.otf) format("otf");
+  font-style: normal;
+  font-weight: 100;
+  src: url(/assets/fonts/Now-Thin.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Now";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/assets/fonts/Now-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Now";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/Now-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Now";
+  font-style: normal;
+  font-weight: 500;
+  src: url(/assets/fonts/Now-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Now";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/assets/fonts/Now-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Now";
+  font-style: normal;
+  font-weight: 900;
+  src: url(/assets/fonts/Now-Black.otf) format("opentype");
 }
 
 @font-face {
   font-family: "Artifika";
   font-style: normal;
-  src: url(/public/assets/fonts/Artifika-Regular.ttf) format("ttf");
+  src: url(/assets/fonts/Artifika-Regular.ttf) format("ttf");
 }
 
 @layer base {
   p {
-    @apply font-now;
-    @apply tracking-wide;
+    @apply font-now font-light tracking-wide text-sm;
+  }
+
+  h2 {
+    @apply font-artifika text-dark lowercase text-4xl;
+  }
+
+  h3 {
+    @apply uppercase text-2xl font-now font-light tracking-widest;
   }
 }

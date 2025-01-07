@@ -9,7 +9,7 @@ export default {
       },
 
       fontFamily: {
-        now: ["Now-Light", "sans-serif"],
+        now: ["Now", "sans-serif"],
         artifika: ["Artifika", "serif"],
       },
 
