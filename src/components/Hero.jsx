@@ -1,6 +1,7 @@
 import React from 'react'
 import { heroVideo } from '../utils'
 import CTA from './CTA'
+import GreenBanner from './GreenBanner'
 
 const Hero = () => {
   return (
@@ -12,7 +13,8 @@ const Hero = () => {
           <h3 className='text-md uppercase tracking-widest font-now'>Fall Collection</h3>
           <p className='text-md md:text-sm mt-8 w-80'>Für eine bessere Zukunft. Entdecke unsere neue Herbst Kollektion mit neuen Pieces aus nachhaltig produzierter Schafwolle.</p>
           <CTA/>
-        </div>        
+        </div>
+        <GreenBanner/>
       </section>
     </>
   )

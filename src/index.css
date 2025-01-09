@@ -58,10 +58,22 @@
   }
 
   h2 {
-    @apply font-artifika text-dark lowercase text-4xl;
+    @apply font-artifika text-dark text-4xl p-4 pl-8 pr-8 text-center pt-12 pb-12;
   }
 
   h3 {
     @apply uppercase text-2xl font-now font-light tracking-widest;
+  }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
