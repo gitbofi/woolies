@@ -9,7 +9,7 @@ const Versprechen = () => {
         <h2>Unser Versprechen an die Natur</h2>
         <div
           id="content-wrapper"
-          className="lg:flex w-full px-8 max-w-7xl pt-8 pb-24 lg:pb-0"
+          className="lg:flex w-full px-8 lg:px-16 max-w-7xl pt-8 pb-24 lg:pb-0"
         >
           <div>
             <p className="pt-4 pb-4 text-center lg:text-left">
