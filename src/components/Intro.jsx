@@ -7,7 +7,7 @@ const Intro = () => {
       <div>
         <h2 className="pt-24">Neu im Herbst</h2>
       </div>
-      <div className="md:grid grid-cols-8 grid-rows-5 gap-2 w-5/6 max-w-7xl justify-self-center pt-8 pb-16 lg:pb-0">
+      <div className="md:grid grid-cols-8 grid-rows-5 gap-2 w-full px-12 max-w-7xl justify-self-center pt-8 pb-16 lg:pb-0">
         <div className="row-span-3 col-span-3">
           <div className="h-fit w-fit overflow-hidden cursor-pointer">
             <img
