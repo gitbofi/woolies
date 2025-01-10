@@ -7,6 +7,13 @@ import jpgCollectionPants from "/assets/media/images/collectionPants.jpg";
 import jpgCollectionPair from "/assets/media/images/collectionPair.jpg";
 import jpgCollectionSingle from "/assets/media/images/collectionSingle.jpg";
 import svgOGTSLogo from "/assets/media/images/ogtsLogo.svg";
+import svgInstagram from "/assets/media/images/instagram.svg";
+import svgWhatsapp from "/assets/media/images/whatsapp.svg";
+import pngTiktok from "/assets/media/images/tiktok.png";
+import jpgCollectionPair2 from "/assets/media/images/wooliesPieces-34.jpg";
+import jpgSheep from "/assets/media/images/sheep.jpg";
+import jpgSheperd from "/assets/media/images/sheperd.jpeg";
+import svgStar from "/assets/media/images/star.svg";
 
 // Produktfotos
 
@@ -59,6 +66,13 @@ export const pants2 = jpgCollectionPants;
 export const collectionPair = jpgCollectionPair;
 export const collectionSingle = jpgCollectionSingle;
 export const ogtsLogo = svgOGTSLogo;
+export const instagram = svgInstagram;
+export const tiktok = pngTiktok;
+export const whatsapp = svgWhatsapp;
+export const collectionPair2 = jpgCollectionPair2;
+export const sheep = jpgSheep;
+export const sheperd = jpgSheperd;
+export const star = svgStar;
 
 export const pulli1 = wooliesPiece1;
 export const pulli1close = wooliesPiece2;

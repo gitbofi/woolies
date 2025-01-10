@@ -46,7 +46,7 @@ const PiecesGallery = () => {
       defaultImage: pulli4,
       hoverImage: pulli4close,
       price: 59,
-      itemName: "Sweater Grün",
+      itemName: "Sweater Gewebt",
     },
     {
       id: 2,
@@ -54,7 +54,7 @@ const PiecesGallery = () => {
       defaultImage: jacket3,
       hoverImage: jacket3close,
       price: 59,
-      itemName: "Shirt Beige",
+      itemName: "Hemdjacke",
     },
     {
       id: 3,
@@ -62,7 +62,7 @@ const PiecesGallery = () => {
       defaultImage: pants2,
       hoverImage: pants2close,
       price: 89,
-      itemName: "Comfort Pants",
+      itemName: "Hose Komfort",
     },
     {
       id: 4,
@@ -70,7 +70,7 @@ const PiecesGallery = () => {
       defaultImage: scarf1,
       hoverImage: scarf1close,
       price: 39,
-      itemName: "Schaal Moos",
+      itemName: "Schal Moos",
     },
     {
       id: 5,
@@ -78,103 +78,95 @@ const PiecesGallery = () => {
       defaultImage: jacket1,
       hoverImage: jacket1close,
       price: 129,
-      itemName: "Jacke Fell",
+      itemName: "Jacke Schafsfell",
     },
     {
       id: 6,
       type: "Oberteile",
       defaultImage: pulli1,
       hoverImage: pulli1close,
-      price: 129,
-      itemName: "Jacke Fell",
+      price: 59,
+      itemName: "Sweater Schiefer",
     },
     {
       id: 7,
       type: "Mützen",
       defaultImage: beanie1,
       hoverImage: beanie1close,
-      price: 129,
-      itemName: "Jacke Fell",
-    },
-    {
-      id: 8,
-      type: "Jacken",
-      defaultImage: jacket3,
-      hoverImage: jacket3close,
-      price: 129,
-      itemName: "Jacke Fell",
+      price: 25,
+      itemName: "Beanie Braun",
     },
     {
       id: 9,
       type: "Oberteile",
       defaultImage: pulli5,
       hoverImage: pulli5close,
-      price: 129,
-      itemName: "Jacke Fell",
+      price: 59,
+      itemName: "Sweater Steingrau",
     },
     {
       id: 10,
       type: "Oberteile",
       defaultImage: pulli3,
       hoverImage: pulli3close,
-      price: 129,
-      itemName: "Jacke Fell",
+      price: 65,
+      itemName: "Stehkragen Schiefer",
     },
     {
       id: 11,
       type: "Mützen",
       defaultImage: beanie2,
       hoverImage: beanie2close,
-      price: 129,
-      itemName: "Jacke Fell",
+      price: 25,
+      itemName: "Mütze Schiefer",
     },
     {
       id: 12,
       type: "Shirts",
       defaultImage: shirt1,
       hoverImage: shirt1close,
-      price: 129,
-      itemName: "Jacke Fell",
+      price: 49,
+      itemName: "Shirt Natur",
     },
     {
       id: 13,
       type: "Oberteile",
       defaultImage: pulli2,
       hoverImage: pulli2close,
-      price: 129,
-      itemName: "Jacke Fell",
+      price: 85,
+      itemName: "Rollkragen Natur",
     },
     {
       id: 14,
       type: "Jacken",
       defaultImage: jacket2,
       hoverImage: jacket2close,
-      price: 129,
-      itemName: "Jacke Fell",
+      price: 219,
+      itemName: "Mantel Geo",
     },
     {
       id: 15,
       type: "Socken",
       defaultImage: socks1,
       hoverImage: socks1close,
-      price: 129,
-      itemName: "Jacke Fell",
+      price: 15,
+      itemName: "Socken Rost",
     },
     {
       id: 16,
       type: "Socken",
       defaultImage: socks2,
       hoverImage: socks2close,
-      price: 129,
-      itemName: "Jacke Fell",
+      price: 15,
+      itemName: "Socken Natur",
     },
     {
       id: 17,
       type: "Socken",
       defaultImage: socks3,
       hoverImage: socks3close,
-      price: 129,
-      itemName: "Jacke Fell",
+      price: 15,
+      itemName: "Socken Hell",
     },
     {
       id: 18,
@@ -182,35 +174,38 @@ const PiecesGallery = () => {
       defaultImage: pants1,
       hoverImage: pants1close,
       price: 79,
-      itemName: "Comfort Pants Light",
+      itemName: "Hose Komfort Leicht",
     },
   ];
 
   const [selectedType, setSelectedType] = useState("");
+  const [showAll, setShowAll] = useState(false);
 
   const filteredItems = selectedType
     ? clothingItems.filter((item) => item.type === selectedType)
     : clothingItems;
 
+  const visibleItems = showAll ? filteredItems : filteredItems.slice(0, 6);
+
   const types = ["Oberteile", "Hosen", "Jacken", "Shirts", "Socken", "Mützen"];
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 pb-20">
       <div>
         <h2>Entdecke alle Pieces</h2>
       </div>
       {/* Filter Pills */}
-      <div className="flex overflow-x-auto gap-2 pl-2 pr-2 pb-6 no-scrollbar">
+      <div className="flex overflow-x-auto gap-2 pl-2 md:pl-0 pr-2 pb-6 no-scrollbar md:justify-self-center">
         {types.map((type) => (
           <button
             key={type}
             onClick={() =>
               setSelectedType((prev) => (prev === type ? "" : type))
             }
-            className={`px-4 py-2 pt-2.5 rounded-full text-sm font-medium font-now ${
+            className={`px-4 py-2 pt-2.5 rounded-full md:rounded-none text-sm font-medium font-now ${
               selectedType === type
-                ? "bg-gray-500 text-white"
-                : "bg-gray-300 text-gray-700"
+                ? "bg-gray-500 text-white md:bg-transparent md:text-dark md:font-bold md:border-2 md:border-dark"
+                : "bg-gray-300 text-gray-700 md:bg-transparent md:text-dark"
             }`}
           >
             {type}
@@ -218,9 +213,9 @@ const PiecesGallery = () => {
         ))}
       </div>
 
-      <div className="w-screen md:pl-20 md:pr-20">
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 gap-y-8">
-          {filteredItems.map((item) => (
+      <div className="w-screen md:px-20 lg:px-32 max-w-7xl justify-self-center">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 gap-y-8">
+          {visibleItems.map((item) => (
             <ClothingItem
               key={item.id}
               defaultImage={item.defaultImage}
@@ -232,6 +227,18 @@ const PiecesGallery = () => {
           ))}
         </div>
       </div>
+
+      {/* Show More / Show Less Button */}
+      {filteredItems.length > 6 && (
+        <div className="text-center pt-8">
+          <button
+            onClick={() => setShowAll((prev) => !prev)}
+            className="px-12 py-2 text-dark border border-dark font-now text-sm hover:underline"
+          >
+            {showAll ? "Weniger anzeigen" : "Mehr anzeigen"}
+          </button>
+        </div>
+      )}
     </div>
   );
 };

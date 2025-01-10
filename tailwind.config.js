@@ -25,6 +25,10 @@ export default {
         pieceSm: "4vw",
         pieceMd: "2vw",
       },
+
+      animation: {
+        slowspin: "spin 5s linear infinite",
+      },
     },
   },
   plugins: [],

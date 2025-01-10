@@ -62,7 +62,7 @@
   }
 
   h3 {
-    @apply uppercase text-2xl font-now font-light tracking-widest;
+    @apply uppercase text-xl font-now font-light tracking-widest;
   }
 }
 

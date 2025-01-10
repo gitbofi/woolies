@@ -23,11 +23,11 @@ const ClothingItem = ({
             className=" absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:scale-105 transform transition-transform duration-500 ease-out"
           />
         </div>
-        <div className="flex pt-2 pl-2 justify-between">
-          <p className="uppercase tracking-widest">{itemName}</p>
-          <div className="flex flex-row-reverse">
-            <p className="pr-1 pl-1">€</p>
-            <p className="font-semibold">{price}</p>
+        <div className="flex flex-col pt-2 pl-2 justify-between">
+          <p className="uppercase font-normal tracking-widest">{itemName}</p>
+          <div className="flex">
+            <p className="font-light text-sm">€ {price}</p>
+            {/*<p className="pl-0.5">€</p>*/}
           </div>
         </div>
       </div>

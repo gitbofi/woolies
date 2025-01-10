@@ -1,5 +1,5 @@
 import React from "react";
-import { collectionPair, collectionSingle } from "../utils";
+import { collectionPair2, collectionSingle } from "../utils";
 
 const Collection = () => {
   return (
@@ -9,9 +9,16 @@ const Collection = () => {
         <div id="content-wrapper" className="flex flex-col pt-6 lg:flex-row">
           <div
             id="content-1"
-            className="flex-col pl-4 pr-4 md:pl-16 md:pr-16 lg:pt-12 lg:pl-32 lg:mr-6"
+            className="flex-col pl-4 pr-4 md:pl-16 md:pr-16 lg:pt-10 lg:pl-32 xl:pl-64"
           >
-            <img src={collectionSingle} alt="Hose" className="pb-2" />
+            <div className="overflow-hidden">
+              {/* Image container */}
+              <img
+                src={collectionSingle}
+                alt="Start"
+                className="inset-0 w-full object-cover transition duration-500 hover:scale-110"
+              />
+            </div>
             <h3 className="p-4 pt-2 lg:pt-6 pb-2">
               Mit Woolies smart casual in den Herbst starten
             </h3>
@@ -30,10 +37,10 @@ const Collection = () => {
           </div>
           <div
             id="content-2"
-            className="flex flex-col pl-4 pr-4 md:pl-16 md:pr-16 lg:pt-12 lg:ml-6 lg:pr-32 lg:flex-col-reverse"
+            className="flex flex-col pl-4 pr-4 md:pl-16 md:pr-16 lg:pt-12 lg:pr-32 xl:pr-64 lg:flex-col-reverse"
           >
             <img
-              src={collectionPair}
+              src={collectionPair2}
               alt="Model volle Größe"
               className="lg:pb-40 lg:pt-8"
             />
