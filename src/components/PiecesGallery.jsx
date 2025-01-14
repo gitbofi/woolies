@@ -192,7 +192,7 @@ const PiecesGallery = () => {
   return (
     <div className="bg-gray-100 pb-20">
       <div>
-        <h2>Entdecke alle Pieces</h2>
+        <h2 id="collection">Entdecke alle Pieces</h2>
       </div>
       {/* Filter Pills */}
       <div className="flex overflow-x-auto gap-2 pl-2 md:pl-0 pr-2 pb-6 no-scrollbar md:justify-self-center">

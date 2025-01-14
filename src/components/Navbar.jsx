@@ -7,6 +7,7 @@ import {
   closeMenuIcon,
 } from "../utils";
 import MobileMenu from "./MobileMenu";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,18 +30,42 @@ const Navbar = () => {
               {" "}
               <rect width="100%" height="100%" fill="#fff" />{" "}
             </svg>
-            <a href="#" className="pt-0.5 cursor-pointer tracking-widest">
+            <Link
+              to="collection"
+              smooth={true}
+              className="pt-0.5 cursor-pointer tracking-widest hover:opacity-80"
+              duration={1000}
+              easing="easeInOutCubic"
+            >
               Oberteile
-            </a>
-            <a href="#" className="pt-0.5 cursor-pointer tracking-widest">
+            </Link>
+            <Link
+              to="collection"
+              smooth={true}
+              className="pt-0.5 cursor-pointer tracking-widest hover:opacity-80"
+              duration={1000}
+              easing="easeInOutCubic"
+            >
               Hosen
-            </a>
-            <a href="#" className="pt-0.5 cursor-pointer tracking-widest">
-              Socken
-            </a>
-            <a href="#" className="pt-0.5 cursor-pointer tracking-widest">
+            </Link>
+            <Link
+              to="collection"
+              smooth={true}
+              className="pt-0.5 cursor-pointer tracking-widest hover:opacity-80"
+              duration={1000}
+              easing="easeInOutCubic"
+            >
+              Jacken
+            </Link>
+            <Link
+              to="collection"
+              smooth={true}
+              className="pt-0.5 cursor-pointer tracking-widest hover:opacity-80"
+              duration={1000}
+              easing="easeInOutCubic"
+            >
               Accessoires
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex">

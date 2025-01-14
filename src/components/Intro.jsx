@@ -1,5 +1,6 @@
 import React from "react";
 import { collectionPair2, collectionSingle } from "../utils";
+import { Link } from "react-scroll";
 
 const Intro = () => {
   return (
@@ -53,9 +54,15 @@ const Intro = () => {
             Das Ergebnis? Zeitlose Mode, die angenehm zu tragen ist und die
             Umwelt schont.
           </p>
-          <button className="uppercase font-now font-medium tracking-widest pt-6 p-2 underline underline-offset-2 md:no-underline hover:underline cursor-pointer">
+          <Link
+            className="uppercase font-now font-medium tracking-widest pt-6 p-2 underline underline-offset-2 md:no-underline hover:underline cursor-pointer"
+            to="collection"
+            smooth={true}
+            duration={800}
+            easing="easeInOutCubic"
+          >
             Kollektion entdecken
-          </button>
+          </Link>
         </div>
       </div>
     </>

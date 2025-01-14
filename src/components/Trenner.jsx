@@ -3,7 +3,7 @@ import { star } from "../utils";
 
 const Trenner = () => {
   return (
-    <div className="flex flex-col items-center lg:flex lg:flex-row text-center lg:justify-between my-12 xl:mt-0 py-4 lg:border-y-2 border-zinc-800 max-w-7xl mx-16">
+    <div className="flex flex-col items-center lg:flex lg:flex-row text-center lg:justify-between my-12 xl:mt-0 py-4 lg:border-y-2 border-zinc-800 mx-16 xl:mx-64">
       <div>
         <img src={star} alt="" className="animate-slowspin" />
       </div>
